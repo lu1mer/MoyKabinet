@@ -1,0 +1,18 @@
+{
+  "dotnet.defaultSolution": "Server.AspNetCore/MoyKabinet.Server.slnx",
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:HOME}/.dotnet:${env:PATH}"
+  },
+  "files.exclude": {
+    "**/.build": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/TestResults": true
+  },
+  "files.watcherExclude": {
+    "**/.build/**": true,
+    "**/bin/**": true,
+    "**/obj/**": true
+  }
+}

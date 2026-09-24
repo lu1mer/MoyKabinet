@@ -1,0 +1,12 @@
+* text=auto
+*.swift text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.slnx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.command text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary

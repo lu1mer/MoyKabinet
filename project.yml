@@ -1,0 +1,95 @@
+name: MoyKabinet
+options:
+  deploymentTarget:
+    iOS: '17.0'
+  developmentLanguage: ru
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    TARGETED_DEVICE_FAMILY: '1'
+    MARKETING_VERSION: '1.3.0'
+    CURRENT_PROJECT_VERSION: '5'
+    PRODUCT_BUNDLE_IDENTIFIER: com.moykabinet.app
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: Мой кабинет
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+    INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+    CODE_SIGN_STYLE: Automatic
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    INFOPLIST_KEY_NSLocalNetworkUsageDescription: Подключение к вашему серверу для онлайн-записи.
+    AUTH_SERVER_URL: ''
+    AUTH_GOOGLE_CLIENT_ID: ''
+    AUTH_YANDEX_CLIENT_ID: ''
+    AUTH_GOOGLE_REDIRECT_SCHEME: com.googleusercontent.apps.unconfigured
+    INFOPLIST_KEY_AUTH_SERVER_URL: '$(AUTH_SERVER_URL)'
+    INFOPLIST_KEY_AUTH_GOOGLE_CLIENT_ID: '$(AUTH_GOOGLE_CLIENT_ID)'
+    INFOPLIST_KEY_AUTH_YANDEX_CLIENT_ID: '$(AUTH_YANDEX_CLIENT_ID)'
+    INFOPLIST_KEY_AUTH_CALLBACK_SCHEME: moykabinet
+  configs:
+    Debug:
+      AUTH_SERVER_URL: http://127.0.0.1:8787
+targets:
+  MoyKabinet:
+    type: application
+    platform: iOS
+    sources:
+      - MoyKabinet
+    info:
+      path: MoyKabinet/Info.plist
+      properties:
+        CFBundleDisplayName: Мой кабинет
+        CFBundleShortVersionString: '$(MARKETING_VERSION)'
+        CFBundleVersion: '$(CURRENT_PROJECT_VERSION)'
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        AUTH_SERVER_URL: '$(AUTH_SERVER_URL)'
+        AUTH_GOOGLE_CLIENT_ID: '$(AUTH_GOOGLE_CLIENT_ID)'
+        AUTH_YANDEX_CLIENT_ID: '$(AUTH_YANDEX_CLIENT_ID)'
+        AUTH_CALLBACK_SCHEME: moykabinet
+        CFBundleURLTypes:
+          - CFBundleTypeRole: None
+            CFBundleURLName: com.moykabinet.oauth
+            CFBundleURLSchemes: [moykabinet, '$(AUTH_GOOGLE_REDIRECT_SCHEME)']
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSCalendarsFullAccessUsageDescription: События нужны, чтобы показывать занятое время и не создавать записи с пересечением.
+        NSCalendarsUsageDescription: События нужны, чтобы показывать занятое время и не создавать записи с пересечением.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.moykabinet.app
+        CODE_SIGN_ENTITLEMENTS: MoyKabinet/MoyKabinet.entitlements
+  MoyKabinetTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [UnitTests]
+    dependencies:
+      - target: MoyKabinet
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.moykabinet.app.tests
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: ''
+  MoyKabinetUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: MoyKabinet
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.moykabinet.app.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: ''
+        TEST_TARGET_NAME: MoyKabinet
+schemes:
+  MoyKabinet:
+    build:
+      targets:
+        MoyKabinet: all
+    test:
+      targets: [MoyKabinetTests, MoyKabinetUITests]

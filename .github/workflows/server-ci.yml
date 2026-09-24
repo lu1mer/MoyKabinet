@@ -1,0 +1,28 @@
+name: Server CI
+
+on:
+  push:
+    paths:
+      - "Server.AspNetCore/**"
+      - ".github/workflows/server-ci.yml"
+  pull_request:
+    paths:
+      - "Server.AspNetCore/**"
+      - ".github/workflows/server-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+          cache: true
+          cache-dependency-path: Server.AspNetCore/**/*.csproj
+      - run: dotnet restore Server.AspNetCore/MoyKabinet.Server.slnx --locked-mode
+      - run: dotnet test Server.AspNetCore/MoyKabinet.Server.slnx --no-restore --configuration Release

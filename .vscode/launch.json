@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET: MoyKabinet API",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "server: build",
+      "program": "${workspaceFolder}/Server.AspNetCore/src/MoyKabinet.Api/bin/Debug/net10.0/MoyKabinet.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Server.AspNetCore/src/MoyKabinet.Api",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://127.0.0.1:8787"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s/swagger"
+      },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мой кабинет — экраны приложения</title>
+<style>
+  :root{color-scheme:light}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff8fb;color:#351b2c;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  main{max-width:1510px;margin:auto;padding:clamp(28px,5vw,72px)}
+  .mark{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:18px;background:linear-gradient(135deg,#ff5797,#ce1467);color:#fff;font-size:26px;font-weight:800;box-shadow:0 12px 28px #e21c7a30}
+  .eyebrow{margin:38px 0 10px;color:#dd287c;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+  h1{margin:0;max-width:760px;font-size:clamp(42px,7vw,82px);line-height:1.02;letter-spacing:-.065em}
+  p{margin:20px 0 8px;color:#806777}
+  .screens{display:flex;gap:24px;overflow-x:auto;padding:32px 0 12px;scroll-snap-type:x proximity}
+  figure{margin:0;flex:0 0 clamp(245px,25vw,310px);scroll-snap-align:start}
+  img{width:100%;display:block;border-radius:30px;border:1px solid #f3d7e4;box-shadow:0 18px 45px #ab456523}
+  figcaption{padding:16px 4px;font-size:13px;font-weight:700;color:#6c4c60}
+  a{color:inherit}
+</style>
+<main>
+  <div class="mark" aria-hidden="true">м.</div>
+  <div class="eyebrow">Мой кабинет · iOS</div>
+  <h1>Красиво по делу.</h1>
+  <p>Расписание, клиенты и запись — в одном месте.</p>
+  <div class="screens">
+    <figure><a href="01-today.png"><img src="01-today.png" alt="Сегодня"></a><figcaption>01 / Сегодня</figcaption></figure>
+    <figure><a href="02-calendar.png"><img src="02-calendar.png" alt="Календарь"></a><figcaption>02 / Расписание</figcaption></figure>
+    <figure><a href="03-clients.png"><img src="03-clients.png" alt="Клиенты"></a><figcaption>03 / Клиенты</figcaption></figure>
+    <figure><a href="04-cabinet.png"><img src="04-cabinet.png" alt="Кабинет"></a><figcaption>04 / Кабинет</figcaption></figure>
+    <figure><a href="05-booking.png"><img src="05-booking.png" alt="Создание записи"></a><figcaption>05 / Новая запись</figcaption></figure>
+    <figure><a href="06-account.png"><img src="06-account.png" alt="Вход в аккаунт"></a><figcaption>06 / Аккаунт</figcaption></figure>
+  </div>
+</main>
+</html>

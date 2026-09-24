@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MoyKabinet.Api/MoyKabinet.Api.csproj" />
+    <Project Path="src/MoyKabinet.Application/MoyKabinet.Application.csproj" />
+    <Project Path="src/MoyKabinet.Domain/MoyKabinet.Domain.csproj" />
+    <Project Path="src/MoyKabinet.Infrastructure/MoyKabinet.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MoyKabinet.Api.Tests/MoyKabinet.Api.Tests.csproj" />
+  </Folder>
+</Solution>

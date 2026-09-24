@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01FC88554566EA0937C2615C /* CabinetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD96B85353103F138B21633 /* CabinetStore.swift */; };
+		02909C0388D13F714AEB3BB3 /* MoyKabinetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5AE079A6ADA1F11BDD52EB /* MoyKabinetApp.swift */; };
+		084B4CA33DCFBFDABE187C9A /* ClientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBDADBCA0A90E1BB3D46D6 /* ClientsView.swift */; };
+		108C650D21EBFC16A6BD8B0D /* CabinetCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867F12C99971B6054341FC6 /* CabinetCommands.swift */; };
+		11706439289F22AA3BFDC240 /* CabinetMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49533BC040234F9CDF0E254 /* CabinetMerge.swift */; };
+		15FD8FE8AF59C4177BB833D7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6C8A0F974B1E86A71645D6BA /* PrivacyInfo.xcprivacy */; };
+		16D0D41727292CACA7DF408B /* ClientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDD21684EE902E8E6DCEE09 /* ClientsViewModel.swift */; };
+		2200B7C6D89066D0622C5D1E /* KeychainAuthSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24211A96E066BFEBE32BE406 /* KeychainAuthSessionRepository.swift */; };
+		2599B036B98E627AF413FA5B /* CalendarImportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072C8C8FB031BDEC4A6EE668 /* CalendarImportManager.swift */; };
+		276B59A8DD43AC8C6C75A471 /* NotificationScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17AB4A6F21BE188AFC5128 /* NotificationScheduling.swift */; };
+		2AA6BA269EA1559FEDDBBC27 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0192360EF6E574D56CE68 /* AuthViewModel.swift */; };
+		30C3A2EFA6601A1AA0ED0A8E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC4C55FCEAC78165F646EE8 /* Theme.swift */; };
+		30C90F8A1EFD566B31313378 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBC34FE0B5EEF4E5F813 /* LaunchView.swift */; };
+		364E11968A204724E5F79DFB /* LocalNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97082E3345CD3E0004858F /* LocalNotificationScheduler.swift */; };
+		37D82FC5FB42A0409DB90DCA /* CabinetValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF962D436DE8B1297A7B2D0 /* CabinetValidation.swift */; };
+		3B31DA8CA779E2E7165692A3 /* AccountAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ED370410FFA69B71763FD /* AccountAPIClient.swift */; };
+		3D22F8CD52463CDA8B843273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1B65C40BADA0A43C831274 /* Assets.xcassets */; };
+		401834108D95DC45D11D24A4 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08110172925F55EF78768EA /* StorageTests.swift */; };
+		407F03B077AC55BFD0AFA9D0 /* CalendarIntegrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071153CB9619639B216E8FAF /* CalendarIntegrationView.swift */; };
+		433D22BA321E03A6BB8A54BC /* BookingRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535D527C9E271E971177805 /* BookingRules.swift */; };
+		480CC1A25B0B6F8BD6B77D29 /* AppearanceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E62691CC1E003BBB9BBC6 /* AppearanceSettingsView.swift */; };
+		4E91D56783035E145DAB804F /* OnlineAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC89BCC28D617AB47C50C06 /* OnlineAPIClient.swift */; };
+		5274EDFD335B231E035C45E7 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35613372E24ADA387D8320E0 /* Formatting.swift */; };
+		57C1A1B4A4390BC7844B5490 /* ProviderAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA17BD664790381D17190DC0 /* ProviderAuthClient.swift */; };
+		5BCCD893B56C19BA6DA60490 /* OnlineModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40BF61E2D9F4D86642EBFD5 /* OnlineModels.swift */; };
+		5DA606E351B96150606F67E0 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA771070D5F2459F9539296B /* AuthView.swift */; };
+		7F8B85DC3992AC7D4E61D510 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087EE4B1D94A02C043CA3C5 /* Models.swift */; };
+		83FA76C264A981CFD93B41C3 /* SyncBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8838A5FC9424613CCD9975 /* SyncBaseRepository.swift */; };
+		84639AEAC1526630E7C8C653 /* DayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F043EAEF63A38CEAF6FD4683 /* DayViewModel.swift */; };
+		8841E30654EB37BF83E598A5 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFF9E7696E31A9F7EB5EE8 /* DayView.swift */; };
+		958801B99571B59FB1763F76 /* OnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FAE9910D4F5D26EF49618 /* OnlineView.swift */; };
+		993794D5F3282B337947E0BE /* OnlineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B4F8D3812999AA5A8CAFF /* OnlineManager.swift */; };
+		9A50DFCC6222D9019A39DDE1 /* OnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05F11577D3244E245E48AF /* OnlineTests.swift */; };
+		AA34CC666CE031C1A9E359BE /* FileCabinetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8882DAFDB31F97B4276E2AB9 /* FileCabinetRepository.swift */; };
+		AACA742DA10E91C2AE3E9E38 /* AuthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7822C4B42C5D2915FBD86F /* AuthConfiguration.swift */; };
+		B12A47A50FCB29B731F81A79 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E40EBD538061C7ECF00DE9 /* Auth.swift */; };
+		B45379689B2752EB152E38B5 /* MoyKabinetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE987F351C5128D4C39648D1 /* MoyKabinetUITests.swift */; };
+		B59AFEC745DF7DE708424A3B /* AuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A52954021DC7A5AE8754B /* AuthTests.swift */; };
+		B60E3CA9F908478C05C25C10 /* BookingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F99F1FCB49A2F54A6C2984 /* BookingForm.swift */; };
+		C513F1D442053E5005CE9484 /* BookingFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC36773E765A2A9C8360DEA5 /* BookingFormViewModel.swift */; };
+		C87254293F9FDD2476F58211 /* CabinetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAB0C9073DA9AED842A5BA /* CabinetView.swift */; };
+		D176C9F3A761E99D537C4093 /* KeychainCredentialRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421E73C96968FFDBD04A6F5 /* KeychainCredentialRepository.swift */; };
+		D22D76A856EDC5B045C74C71 /* CabinetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A5D7AFEC2FB096F2155FC /* CabinetRepository.swift */; };
+		DCFEB7D90603D2B88BF10EA4 /* CabinetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33F6AD21BBFA1657FC4528F /* CabinetViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F01EAE0A9B1879B04A6F419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34146EC94A92348D639B3290 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1430D873043B40967363423B;
+			remoteInfo = MoyKabinet;
+		};
+		3DF33A0E6CC463220C1791F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34146EC94A92348D639B3290 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1430D873043B40967363423B;
+			remoteInfo = MoyKabinet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		071153CB9619639B216E8FAF /* CalendarIntegrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarIntegrationView.swift; sourceTree = "<group>"; };
+		072C8C8FB031BDEC4A6EE668 /* CalendarImportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarImportManager.swift; sourceTree = "<group>"; };
+		1867F12C99971B6054341FC6 /* CabinetCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetCommands.swift; sourceTree = "<group>"; };
+		1D8838A5FC9424613CCD9975 /* SyncBaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncBaseRepository.swift; sourceTree = "<group>"; };
+		1EBFF9E7696E31A9F7EB5EE8 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		24211A96E066BFEBE32BE406 /* KeychainAuthSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAuthSessionRepository.swift; sourceTree = "<group>"; };
+		254A256C21067B2C65E2B592 /* MoyKabinetTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoyKabinetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35613372E24ADA387D8320E0 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		38D9C75A59A3783EE53CFBFA /* MoyKabinetUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MoyKabinetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7822C4B42C5D2915FBD86F /* AuthConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfiguration.swift; sourceTree = "<group>"; };
+		3D6A5D7AFEC2FB096F2155FC /* CabinetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetRepository.swift; sourceTree = "<group>"; };
+		3FC89BCC28D617AB47C50C06 /* OnlineAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineAPIClient.swift; sourceTree = "<group>"; };
+		4F6FAE9910D4F5D26EF49618 /* OnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineView.swift; sourceTree = "<group>"; };
+		5DAAB0C9073DA9AED842A5BA /* CabinetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetView.swift; sourceTree = "<group>"; };
+		5E97082E3345CD3E0004858F /* LocalNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationScheduler.swift; sourceTree = "<group>"; };
+		6C8A0F974B1E86A71645D6BA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6FC4C55FCEAC78165F646EE8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		73BAA30282FE92679FCEB8D2 /* MoyKabinet.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MoyKabinet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1B65C40BADA0A43C831274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80E40EBD538061C7ECF00DE9 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		8882DAFDB31F97B4276E2AB9 /* FileCabinetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCabinetRepository.swift; sourceTree = "<group>"; };
+		8D9A52954021DC7A5AE8754B /* AuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTests.swift; sourceTree = "<group>"; };
+		8E5AE079A6ADA1F11BDD52EB /* MoyKabinetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyKabinetApp.swift; sourceTree = "<group>"; };
+		9087EE4B1D94A02C043CA3C5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9421E73C96968FFDBD04A6F5 /* KeychainCredentialRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainCredentialRepository.swift; sourceTree = "<group>"; };
+		9491E72BC964E9FEFD1203FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9C17AB4A6F21BE188AFC5128 /* NotificationScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduling.swift; sourceTree = "<group>"; };
+		9E05F11577D3244E245E48AF /* OnlineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineTests.swift; sourceTree = "<group>"; };
+		A08110172925F55EF78768EA /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
+		B1F99F1FCB49A2F54A6C2984 /* BookingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingForm.swift; sourceTree = "<group>"; };
+		B33F6AD21BBFA1657FC4528F /* CabinetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetViewModel.swift; sourceTree = "<group>"; };
+		B49533BC040234F9CDF0E254 /* CabinetMerge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetMerge.swift; sourceTree = "<group>"; };
+		BADACBC34FE0B5EEF4E5F813 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		C8A0192360EF6E574D56CE68 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CBCBDADBCA0A90E1BB3D46D6 /* ClientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsView.swift; sourceTree = "<group>"; };
+		DA771070D5F2459F9539296B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		DBD96B85353103F138B21633 /* CabinetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetStore.swift; sourceTree = "<group>"; };
+		DDF962D436DE8B1297A7B2D0 /* CabinetValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetValidation.swift; sourceTree = "<group>"; };
+		DE987F351C5128D4C39648D1 /* MoyKabinetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyKabinetUITests.swift; sourceTree = "<group>"; };
+		E2E2B836E57FE19DAE8469FB /* MoyKabinet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoyKabinet.entitlements; sourceTree = "<group>"; };
+		EA17BD664790381D17190DC0 /* ProviderAuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderAuthClient.swift; sourceTree = "<group>"; };
+		EA2E62691CC1E003BBB9BBC6 /* AppearanceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettingsView.swift; sourceTree = "<group>"; };
+		EC36773E765A2A9C8360DEA5 /* BookingFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormViewModel.swift; sourceTree = "<group>"; };
+		F02ED370410FFA69B71763FD /* AccountAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPIClient.swift; sourceTree = "<group>"; };
+		F043EAEF63A38CEAF6FD4683 /* DayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewModel.swift; sourceTree = "<group>"; };
+		F40BF61E2D9F4D86642EBFD5 /* OnlineModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineModels.swift; sourceTree = "<group>"; };
+		F535D527C9E271E971177805 /* BookingRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRules.swift; sourceTree = "<group>"; };
+		F74B4F8D3812999AA5A8CAFF /* OnlineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineManager.swift; sourceTree = "<group>"; };
+		FBDD21684EE902E8E6DCEE09 /* ClientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B8504B8E854DAC2CB81A7F9 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				CBCBDADBCA0A90E1BB3D46D6 /* ClientsView.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		0F326B9559A84A5F10391C22 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1EBFF9E7696E31A9F7EB5EE8 /* DayView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		20113C94ADC87E73144181DC /* MoyKabinet */ = {
+			isa = PBXGroup;
+			children = (
+				7C1B65C40BADA0A43C831274 /* Assets.xcassets */,
+				9491E72BC964E9FEFD1203FC /* Info.plist */,
+				E2E2B836E57FE19DAE8469FB /* MoyKabinet.entitlements */,
+				8E5AE079A6ADA1F11BDD52EB /* MoyKabinetApp.swift */,
+				6C8A0F974B1E86A71645D6BA /* PrivacyInfo.xcprivacy */,
+				80519472AD33FBD9359139C2 /* Data */,
+				2426263980463412C02F1424 /* Domain */,
+				476031505969B96EE46C5674 /* Presentation */,
+			);
+			path = MoyKabinet;
+			sourceTree = "<group>";
+		};
+		2426263980463412C02F1424 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				80E40EBD538061C7ECF00DE9 /* Auth.swift */,
+				F535D527C9E271E971177805 /* BookingRules.swift */,
+				1867F12C99971B6054341FC6 /* CabinetCommands.swift */,
+				B49533BC040234F9CDF0E254 /* CabinetMerge.swift */,
+				3D6A5D7AFEC2FB096F2155FC /* CabinetRepository.swift */,
+				DDF962D436DE8B1297A7B2D0 /* CabinetValidation.swift */,
+				9087EE4B1D94A02C043CA3C5 /* Models.swift */,
+				9C17AB4A6F21BE188AFC5128 /* NotificationScheduling.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2AECB1490725A8B89C919DB7 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				072C8C8FB031BDEC4A6EE668 /* CalendarImportManager.swift */,
+				8882DAFDB31F97B4276E2AB9 /* FileCabinetRepository.swift */,
+				5E97082E3345CD3E0004858F /* LocalNotificationScheduler.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		403136128E116EB93E78FD67 = {
+			isa = PBXGroup;
+			children = (
+				20113C94ADC87E73144181DC /* MoyKabinet */,
+				8675BBDD85713F4327CA6360 /* UITests */,
+				A0CD6C1C60EE8E949C062B3F /* UnitTests */,
+				BFB4BC6967B6529CCF124B8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		476031505969B96EE46C5674 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				35613372E24ADA387D8320E0 /* Formatting.swift */,
+				EFE7C1032602962CDD03A517 /* DesignSystem */,
+				AD2C8938B102304809CE394A /* ViewModels */,
+				DF12E86A9A6E78A063385538 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		53FBD2B85234EDDE935AA5BD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DA771070D5F2459F9539296B /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		79569017CAF2480804BF36A2 /* Online */ = {
+			isa = PBXGroup;
+			children = (
+				9421E73C96968FFDBD04A6F5 /* KeychainCredentialRepository.swift */,
+				3FC89BCC28D617AB47C50C06 /* OnlineAPIClient.swift */,
+				F40BF61E2D9F4D86642EBFD5 /* OnlineModels.swift */,
+				1D8838A5FC9424613CCD9975 /* SyncBaseRepository.swift */,
+			);
+			path = Online;
+			sourceTree = "<group>";
+		};
+		80519472AD33FBD9359139C2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C0C2433C09CECB1912692E41 /* Auth */,
+				2AECB1490725A8B89C919DB7 /* Local */,
+				79569017CAF2480804BF36A2 /* Online */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8675BBDD85713F4327CA6360 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE987F351C5128D4C39648D1 /* MoyKabinetUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		9FA835FF5EAD7F350771C898 /* Online */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FAE9910D4F5D26EF49618 /* OnlineView.swift */,
+			);
+			path = Online;
+			sourceTree = "<group>";
+		};
+		A0CD6C1C60EE8E949C062B3F /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D9A52954021DC7A5AE8754B /* AuthTests.swift */,
+				9E05F11577D3244E245E48AF /* OnlineTests.swift */,
+				A08110172925F55EF78768EA /* StorageTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		AD2C8938B102304809CE394A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8A0192360EF6E574D56CE68 /* AuthViewModel.swift */,
+				EC36773E765A2A9C8360DEA5 /* BookingFormViewModel.swift */,
+				DBD96B85353103F138B21633 /* CabinetStore.swift */,
+				B33F6AD21BBFA1657FC4528F /* CabinetViewModel.swift */,
+				FBDD21684EE902E8E6DCEE09 /* ClientsViewModel.swift */,
+				F043EAEF63A38CEAF6FD4683 /* DayViewModel.swift */,
+				F74B4F8D3812999AA5A8CAFF /* OnlineManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BFB4BC6967B6529CCF124B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73BAA30282FE92679FCEB8D2 /* MoyKabinet.app */,
+				254A256C21067B2C65E2B592 /* MoyKabinetTests.xctest */,
+				38D9C75A59A3783EE53CFBFA /* MoyKabinetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0C2433C09CECB1912692E41 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F02ED370410FFA69B71763FD /* AccountAPIClient.swift */,
+				3C7822C4B42C5D2915FBD86F /* AuthConfiguration.swift */,
+				24211A96E066BFEBE32BE406 /* KeychainAuthSessionRepository.swift */,
+				EA17BD664790381D17190DC0 /* ProviderAuthClient.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C76E3E2DDBF80A790437F3FD /* Cabinet */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E62691CC1E003BBB9BBC6 /* AppearanceSettingsView.swift */,
+				5DAAB0C9073DA9AED842A5BA /* CabinetView.swift */,
+				071153CB9619639B216E8FAF /* CalendarIntegrationView.swift */,
+			);
+			path = Cabinet;
+			sourceTree = "<group>";
+		};
+		D06A9F5614B254D7E8EE73F7 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				B1F99F1FCB49A2F54A6C2984 /* BookingForm.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		DF12E86A9A6E78A063385538 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53FBD2B85234EDDE935AA5BD /* Auth */,
+				D06A9F5614B254D7E8EE73F7 /* Booking */,
+				C76E3E2DDBF80A790437F3FD /* Cabinet */,
+				0B8504B8E854DAC2CB81A7F9 /* Clients */,
+				9FA835FF5EAD7F350771C898 /* Online */,
+				0F326B9559A84A5F10391C22 /* Schedule */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFE7C1032602962CDD03A517 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BADACBC34FE0B5EEF4E5F813 /* LaunchView.swift */,
+				6FC4C55FCEAC78165F646EE8 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1430D873043B40967363423B /* MoyKabinet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B86EC4EE4CB78B6721C9F1C /* Build configuration list for PBXNativeTarget "MoyKabinet" */;
+			buildPhases = (
+				89CA55767137631D2F8DBF51 /* Sources */,
+				25E5FE340C962E452751AF10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoyKabinet;
+			packageProductDependencies = (
+			);
+			productName = MoyKabinet;
+			productReference = 73BAA30282FE92679FCEB8D2 /* MoyKabinet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CC4157475E614E613394E6C /* MoyKabinetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85BFDAD9386398C57B2F5FD0 /* Build configuration list for PBXNativeTarget "MoyKabinetUITests" */;
+			buildPhases = (
+				7C51297CAE26D490D0A5353A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24524B2E9372AA0B7D84202E /* PBXTargetDependency */,
+			);
+			name = MoyKabinetUITests;
+			packageProductDependencies = (
+			);
+			productName = MoyKabinetUITests;
+			productReference = 38D9C75A59A3783EE53CFBFA /* MoyKabinetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D765919EFF928125B6407D90 /* MoyKabinetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B3573ECBC2DB179600DF99 /* Build configuration list for PBXNativeTarget "MoyKabinetTests" */;
+			buildPhases = (
+				46A82C39D7BFAAC715736157 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E73CFF02AA5BEB7E6A872F83 /* PBXTargetDependency */,
+			);
+			name = MoyKabinetTests;
+			packageProductDependencies = (
+			);
+			productName = MoyKabinetTests;
+			productReference = 254A256C21067B2C65E2B592 /* MoyKabinetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34146EC94A92348D639B3290 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1430D873043B40967363423B = {
+						ProvisioningStyle = Automatic;
+					};
+					4CC4157475E614E613394E6C = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1430D873043B40967363423B;
+					};
+					D765919EFF928125B6407D90 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4341063AEBBB878E327EF6E2 /* Build configuration list for PBXProject "MoyKabinet" */;
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ru,
+			);
+			mainGroup = 403136128E116EB93E78FD67;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BFB4BC6967B6529CCF124B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1430D873043B40967363423B /* MoyKabinet */,
+				D765919EFF928125B6407D90 /* MoyKabinetTests */,
+				4CC4157475E614E613394E6C /* MoyKabinetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25E5FE340C962E452751AF10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D22F8CD52463CDA8B843273 /* Assets.xcassets in Resources */,
+				15FD8FE8AF59C4177BB833D7 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A82C39D7BFAAC715736157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59AFEC745DF7DE708424A3B /* AuthTests.swift in Sources */,
+				9A50DFCC6222D9019A39DDE1 /* OnlineTests.swift in Sources */,
+				401834108D95DC45D11D24A4 /* StorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C51297CAE26D490D0A5353A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45379689B2752EB152E38B5 /* MoyKabinetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CA55767137631D2F8DBF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B31DA8CA779E2E7165692A3 /* AccountAPIClient.swift in Sources */,
+				480CC1A25B0B6F8BD6B77D29 /* AppearanceSettingsView.swift in Sources */,
+				B12A47A50FCB29B731F81A79 /* Auth.swift in Sources */,
+				AACA742DA10E91C2AE3E9E38 /* AuthConfiguration.swift in Sources */,
+				5DA606E351B96150606F67E0 /* AuthView.swift in Sources */,
+				2AA6BA269EA1559FEDDBBC27 /* AuthViewModel.swift in Sources */,
+				B60E3CA9F908478C05C25C10 /* BookingForm.swift in Sources */,
+				C513F1D442053E5005CE9484 /* BookingFormViewModel.swift in Sources */,
+				433D22BA321E03A6BB8A54BC /* BookingRules.swift in Sources */,
+				108C650D21EBFC16A6BD8B0D /* CabinetCommands.swift in Sources */,
+				11706439289F22AA3BFDC240 /* CabinetMerge.swift in Sources */,
+				D22D76A856EDC5B045C74C71 /* CabinetRepository.swift in Sources */,
+				01FC88554566EA0937C2615C /* CabinetStore.swift in Sources */,
+				37D82FC5FB42A0409DB90DCA /* CabinetValidation.swift in Sources */,
+				C87254293F9FDD2476F58211 /* CabinetView.swift in Sources */,
+				DCFEB7D90603D2B88BF10EA4 /* CabinetViewModel.swift in Sources */,
+				2599B036B98E627AF413FA5B /* CalendarImportManager.swift in Sources */,
+				407F03B077AC55BFD0AFA9D0 /* CalendarIntegrationView.swift in Sources */,
+				084B4CA33DCFBFDABE187C9A /* ClientsView.swift in Sources */,
+				16D0D41727292CACA7DF408B /* ClientsViewModel.swift in Sources */,
+				8841E30654EB37BF83E598A5 /* DayView.swift in Sources */,
+				84639AEAC1526630E7C8C653 /* DayViewModel.swift in Sources */,
+				AA34CC666CE031C1A9E359BE /* FileCabinetRepository.swift in Sources */,
+				5274EDFD335B231E035C45E7 /* Formatting.swift in Sources */,
+				2200B7C6D89066D0622C5D1E /* KeychainAuthSessionRepository.swift in Sources */,
+				D176C9F3A761E99D537C4093 /* KeychainCredentialRepository.swift in Sources */,
+				30C90F8A1EFD566B31313378 /* LaunchView.swift in Sources */,
+				364E11968A204724E5F79DFB /* LocalNotificationScheduler.swift in Sources */,
+				7F8B85DC3992AC7D4E61D510 /* Models.swift in Sources */,
+				02909C0388D13F714AEB3BB3 /* MoyKabinetApp.swift in Sources */,
+				276B59A8DD43AC8C6C75A471 /* NotificationScheduling.swift in Sources */,
+				4E91D56783035E145DAB804F /* OnlineAPIClient.swift in Sources */,
+				993794D5F3282B337947E0BE /* OnlineManager.swift in Sources */,
+				5BCCD893B56C19BA6DA60490 /* OnlineModels.swift in Sources */,
+				958801B99571B59FB1763F76 /* OnlineView.swift in Sources */,
+				57C1A1B4A4390BC7844B5490 /* ProviderAuthClient.swift in Sources */,
+				83FA76C264A981CFD93B41C3 /* SyncBaseRepository.swift in Sources */,
+				30C3A2EFA6601A1AA0ED0A8E /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24524B2E9372AA0B7D84202E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1430D873043B40967363423B /* MoyKabinet */;
+			targetProxy = 3DF33A0E6CC463220C1791F1 /* PBXContainerItemProxy */;
+		};
+		E73CFF02AA5BEB7E6A872F83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1430D873043B40967363423B /* MoyKabinet */;
+			targetProxy = 0F01EAE0A9B1879B04A6F419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BE1E964DC4A6E23CE5D4D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoyKabinet;
+			};
+			name = Debug;
+		};
+		5AA4C285CAF6D0392F83BFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MoyKabinet/MoyKabinet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MoyKabinet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60408FE9A3A6431D123A1C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoyKabinet.app/MoyKabinet";
+			};
+			name = Debug;
+		};
+		7CA9B3335E1862E51E23F145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoyKabinet.app/MoyKabinet";
+			};
+			name = Release;
+		};
+		B3AC74E3039A496C0BFEDC2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUTH_GOOGLE_CLIENT_ID = "";
+				AUTH_GOOGLE_REDIRECT_SCHEME = com.googleusercontent.apps.unconfigured;
+				AUTH_SERVER_URL = "";
+				AUTH_YANDEX_CLIENT_ID = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_AUTH_CALLBACK_SCHEME = moykabinet;
+				INFOPLIST_KEY_AUTH_GOOGLE_CLIENT_ID = "$(AUTH_GOOGLE_CLIENT_ID)";
+				INFOPLIST_KEY_AUTH_SERVER_URL = "$(AUTH_SERVER_URL)";
+				INFOPLIST_KEY_AUTH_YANDEX_CLIENT_ID = "$(AUTH_YANDEX_CLIENT_ID)";
+				INFOPLIST_KEY_CFBundleDisplayName = "Мой кабинет";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Подключение к вашему серверу для онлайн-записи.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.3.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E51D89F7C9CD3E44188C507B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				AUTH_GOOGLE_CLIENT_ID = "";
+				AUTH_GOOGLE_REDIRECT_SCHEME = com.googleusercontent.apps.unconfigured;
+				AUTH_SERVER_URL = "http://127.0.0.1:8787";
+				AUTH_YANDEX_CLIENT_ID = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_AUTH_CALLBACK_SCHEME = moykabinet;
+				INFOPLIST_KEY_AUTH_GOOGLE_CLIENT_ID = "$(AUTH_GOOGLE_CLIENT_ID)";
+				INFOPLIST_KEY_AUTH_SERVER_URL = "$(AUTH_SERVER_URL)";
+				INFOPLIST_KEY_AUTH_YANDEX_CLIENT_ID = "$(AUTH_YANDEX_CLIENT_ID)";
+				INFOPLIST_KEY_CFBundleDisplayName = "Мой кабинет";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Подключение к вашему серверу для онлайн-записи.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.3.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E8ABC48BFB9D38D0E8887775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MoyKabinet/MoyKabinet.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MoyKabinet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F047ADB0B160A5FD66DE52DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moykabinet.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoyKabinet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4341063AEBBB878E327EF6E2 /* Build configuration list for PBXProject "MoyKabinet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E51D89F7C9CD3E44188C507B /* Debug */,
+				B3AC74E3039A496C0BFEDC2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		85BFDAD9386398C57B2F5FD0 /* Build configuration list for PBXNativeTarget "MoyKabinetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE1E964DC4A6E23CE5D4D4F /* Debug */,
+				F047ADB0B160A5FD66DE52DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8B86EC4EE4CB78B6721C9F1C /* Build configuration list for PBXNativeTarget "MoyKabinet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8ABC48BFB9D38D0E8887775 /* Debug */,
+				5AA4C285CAF6D0392F83BFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F2B3573ECBC2DB179600DF99 /* Build configuration list for PBXNativeTarget "MoyKabinetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60408FE9A3A6431D123A1C09 /* Debug */,
+				7CA9B3335E1862E51E23F145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34146EC94A92348D639B3290 /* Project object */;
+}
